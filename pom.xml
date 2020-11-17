@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>cn.hrgp</groupId>
     <artifactId>hr</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>hr_web</module>
         <module>hr_dao</module>
         <module>hr_service</module>
-        <module>hr_web</module>
     </modules>
 
 
