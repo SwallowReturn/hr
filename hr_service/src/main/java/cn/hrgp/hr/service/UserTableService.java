@@ -1,6 +1,6 @@
 package cn.hrgp.hr.service;
 
-import cn.hrgp.hr.entity.UserTable;
+import cn.hrgb.hr.domain.UserTable;
 
 import java.util.List;
 

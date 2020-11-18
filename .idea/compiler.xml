@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hr_web" />
+        <module name="hr_domain" />
         <module name="hr_dao" />
+        <module name="hr_utils" />
         <module name="hr_service" />
       </profile>
     </annotationProcessing>

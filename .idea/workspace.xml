@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="hr_web:war" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,19 +25,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74975d55-3d0c-4019-8839-d00ff9129277" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hr_dao/src/main/java/cn/hrgp/hr/dao/UserTableDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_dao/src/main/java/cn/hrgp/hr/entity/UserTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_dao/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/UserTableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/impl/UserTableServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_service/src/main/resources/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_web/src/main/java/cn/hrgp/hr/global/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr_web/src/main/resources/spring-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/java/cn/hrgp/hr/controller/UserTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr_web/src/main/webapp/pages/user-table.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hr_dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr_dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_dao/src/main/java/cn/hrgp/hr/dao/UserTableDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr_dao/src/main/java/cn/hrgp/hr/dao/UserTableDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_dao/src/main/java/cn/hrgp/hr/entity/UserTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr_domain/src/main/java/cn/hrgb/hr/domain/UserTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hr_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/UserTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/UserTableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/impl/UserTableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hr_service/src/main/java/cn/hrgp/hr/service/impl/UserTableServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_service/src/main/resources/spring-service.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hr_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr_web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_web/src/main/java/cn/hrgp/hr/global/EncodingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_web/src/main/resources/spring-web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hr_web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hr_web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr_web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/hr_web/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +64,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -77,28 +99,121 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hr_web/src/main/java/cn/hrgp/hr/global" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main" />
+      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\resources" />
+      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\webapp\pages" />
+      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\webapp" />
+      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\java\cn\hrgp\hr\global" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\java" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\java\cn\hrgp\hr\global" />
-      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\webapp\WEB-INF" />
-      <recent name="E:\冲刺\柯学习\hr\hr_web\src\main\resources" />
-      <recent name="E:\冲刺\柯学习\hr\hr_service\src\main\java" />
-      <recent name="E:\冲刺\柯学习\hr\hr_service\src\main\resources" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.3" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="threads" />
+            <option name="updateIndicesOnProjectOpen" value="true" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.3\conf\settings.xml" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/hr_web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr_web [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.3" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="threads" />
+            <option name="updateIndicesOnProjectOpen" value="true" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.3\conf\settings.xml" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/hr_web" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -112,6 +227,8 @@
       <updated>1605609133753</updated>
       <workItem from="1605609144102" duration="676000" />
       <workItem from="1605623579191" duration="4491000" />
+      <workItem from="1605661378812" duration="18158000" />
+      <workItem from="1605691302725" duration="2310000" />
     </task>
     <servers />
   </component>
@@ -134,29 +251,93 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="835" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1605627914001">
+    <state x="601" y="94" key="#Inspections" timestamp="1605683849209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="835" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605627914001" />
-    <state width="1097" height="67" key="GridCell.Tab.0.bottom" timestamp="1605609824048">
+    <state x="601" y="94" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1605683849209" />
+    <state x="264" y="0" key="#Project_Structure" timestamp="1605687512452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1097" height="67" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605609824048" />
-    <state width="1097" height="67" key="GridCell.Tab.0.center" timestamp="1605609824048">
+    <state x="264" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605687512452" />
+    <state x="595" y="332" key="#Tomcat_Server" timestamp="1605684536927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1097" height="67" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605609824048" />
-    <state width="1097" height="67" key="GridCell.Tab.0.left" timestamp="1605609824048">
+    <state x="595" y="332" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1605684536927" />
+    <state x="138" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605691394593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1097" height="67" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605609824048" />
-    <state width="1097" height="67" key="GridCell.Tab.0.right" timestamp="1605609824048">
+    <state x="138" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605691394593" />
+    <state x="835" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1605672982659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1097" height="67" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605609824048" />
-    <state x="278" y="39" key="new project wizard" timestamp="1605609362815">
+    <state x="835" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605672982659" />
+    <state x="725" y="455" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605672388303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="278" y="39" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605609362815" />
+    <state x="725" y="455" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1605672388303" />
+    <state x="792" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605689946183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="792" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605689946183" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605688021637">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605688021637" />
+    <state width="1341" height="92" key="GridCell.Tab.0.bottom" timestamp="1605693622499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1341" height="92" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605693622499" />
+    <state width="1341" height="92" key="GridCell.Tab.0.center" timestamp="1605693622499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1341" height="92" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605693622499" />
+    <state width="1341" height="92" key="GridCell.Tab.0.left" timestamp="1605693622499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1341" height="92" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605693622499" />
+    <state width="1341" height="92" key="GridCell.Tab.0.right" timestamp="1605693622499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1341" height="92" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605693622499" />
+    <state width="713" height="216" key="GridCell.Tab.1.bottom" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state width="713" height="216" key="GridCell.Tab.1.center" timestamp="1605691267755">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605691267755" />
+    <state width="713" height="216" key="GridCell.Tab.1.left" timestamp="1605691267755">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605691267755" />
+    <state width="713" height="216" key="GridCell.Tab.1.right" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state width="713" height="216" key="GridCell.Tab.2.bottom" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state width="713" height="216" key="GridCell.Tab.2.center" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state width="713" height="216" key="GridCell.Tab.2.left" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state width="713" height="216" key="GridCell.Tab.2.right" timestamp="1605691267756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="713" height="216" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1605691267756" />
+    <state x="540" y="43" key="SettingsEditor" timestamp="1605693212430">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="43" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605693212430" />
+    <state x="278" y="39" key="new project wizard" timestamp="1605672125382">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="278" y="39" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605672125382" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package cn.hrgp.hr.dao;
 
-import cn.hrgp.hr.entity.UserTable;
+import cn.hrgb.hr.domain.UserTable;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -32,9 +33,11 @@ public interface UserTableDao {
     public UserTable selectById(Integer id);
 
     /**
+     * throw Exception
      * 查询所有
      * @return
      */
+    @Select("select * from HR_USER_TABLE")
     public List<UserTable> allUser();
 
     /**
