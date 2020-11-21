@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hr.two.dao.HrDao">
+
+    <resultMap id="resultUser" type="UserRoleVo">
+
+        <result property="UR_ID" column="UR_ID"/>
+        <result property="UR_USERNUM" column="UR_USERNUM"/>
+        <result property="UR_ROLENUM" column="UR_ROLENUM"/>
+        <result property="USER_ID" column="USER_ID"/>
+        <result property="USER_NUM" column="USER_NUM"/>
+        <result property="USER_PWD" column="USER_PWD"/>
+        <result property="USER_NAME" column="USER_NAME"/>
+        <result property="USER_SEX" column="USER_SEX"/>
+        <result property="USER_PHONE" column="USER_PHONE"/>
+        <result property="USER_IDCARD" column="USER_IDCARD"/>
+        <result property="USER_STATUS" column="USER_STATUS"/>
+        <result property="USER_CREATETIME" column="USER_CREATETIME"/>
+        <result property="USER_UPDATETIME" column="USER_UPDATETIME"/>
+        <result property="USER_CLOCK" column="USER_CLOCK"/>
+    </resultMap>
+
+    <select id="selUserByNum" statementType="CALLABLE" parameterType="java.util.Map">
+        {
+            call SELUSER_PLUS(#{vi_USER_NUM,mode=IN,jdbcType=VARCHAR},#{vi_USER_PWD,mode=IN,jdbcType=VARCHAR},#{map,jdbcType=CURSOR,mode=OUT,javaType=ResultSet,resultMap=resultUser})
+        }
+    </select>
+
+    <resultMap id="resultPower" type="Power">
+        <result property="POW_NAME" column="POW_NAME"/>
+        <result property="POW_URL" column="POW_URL"/>
+    </resultMap>
+
+    <select id="selPowerByRoleNum" statementType="CALLABLE" parameterType="java.util.Map">
+        {
+            call SELPOWER(#{vi_ROLE_NUM,mode=IN,jdbcType=INTEGER},#{map,jdbcType=CURSOR,mode=OUT,javaType=ResultSet,resultMap=resultPower})
+        }
+    </select>
+</mapper>

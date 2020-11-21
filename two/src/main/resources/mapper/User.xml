@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+
+<mapper namespace="com.hr.two.dao.UserDao">
+
+    <resultMap id="resultUsers" type="User">
+        <result property="USER_ID" column="USER_ID"/>
+        <result property="USER_NUM" column="USER_NUM"/>
+        <result property="USER_PWD" column="USER_PWD"/>
+        <result property="USER_NAME" column="USER_NAME"/>
+        <result property="USER_SEX" column="USER_SEX"/>
+        <result property="USER_PHONE" column="USER_PHONE"/>
+        <result property="USER_IDCARD" column="USER_IDCARD"/>
+        <result property="USER_STATUS" column="USER_STATUS"/>
+        <result property="USER_CREATETIME" column="USER_CREATETIME"/>
+        <result property="USER_UPDATETIME" column="USER_UPDATETIME"/>
+       <!-- <result property="USER_CLOCK" column="USER_CLOCK"/>-->
+    </resultMap>
+    <select id="selectAll" resultMap="resultUsers" >
+           select * from
+(select u.*, rownum rn from
+(select u.USER_NUM,u.USER_NAME,u.USER_SEX,u.USER_PHONE,
+        u.USER_IDCARD,u.USER_CREATETIME
+        from HR_USER_TABLE u  full outer join  HR_USER_ROLE_TABLE r  on u.USER_NUM=r.UR_USERNUM
+    and r.UR_ROLENUM=111
+    ) u )
+where   rn between 1 and 20
+        </select>
+</mapper>
+
+
+
+
+
+
+<!--        <result property="UR_ID" column="UR_ID"/>
+        <result property="UR_USERNUM" column="UR_USERNUM"/>
+        <result property="UR_ROLENUM" column="UR_ROLENUM"/>-->
+
+
+
+<!--        <select id="selectAll" >
+
+select * from
+(select u.*, rownum rn from
+(select u.USER_NUM,u.USER_NAME,u.USER_SEX,u.USER_PHONE,
+        u.USER_IDCARD,u.USER_CREATETIME
+        from HR_USER_TABLE u  full outer join  HR_USER_ROLE_TABLE r  on u.USER_NUM=r.UR_USERNUM
+    and r.UR_ROLENUM=111
+    ) u )
+where   rn between 1 and 20
+
+
+        </select>-->
+
+
+
